@@ -1,0 +1,21 @@
+body {
+	background: white;
+	color: black;
+	font-family: “Times New Roman”, Times, serif;
+	font-size: 12px;
+}
+#contenuto{ width:900px; }
+#titoloStampa{ display:inline; }
+#testa, #infobox{ display:none; }
+a{
+	color: black;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+a:after{
+	content: " (" attr(href) ") ";
+	font-size: 90%;
+}
+#immagini a:after{ content:"";}
+.mostra{ display:none; }

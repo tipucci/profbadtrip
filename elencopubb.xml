@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elenco>
+
+<pubblicazione categoria="copDisco" periodo="80">
+<stile>copertina a colori</stile>
+<nome>Double Deck 5</nome>
+<anno>1988</anno>
+<citta>Castelfranco Emilia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="80">
+<stile>copertina a colori</stile>
+<nome>The winterland days di Jimi Hendrix</nome>
+<anno>1989</anno>
+<citta>La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="80">
+<stile>copertina in bianco e nero</stile>
+<nome>Ordine di Starfuckers</nome>
+<anno>1989</anno>
+<citta>Los Angeles</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Teatro Satanico di Nekofutschaka Musick Cabaret</nome>
+<anno>1990</anno>
+<citta>s.l.</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="90">
+<stile>copertina a colori</stile>
+<nome>The A-10</nome>
+<anno>1990</anno>
+<citta>Madrid</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Show you their duelling banjos di Meathead and Zeni Geva</nome>
+<anno>1990</anno>
+<citta>Firenze</citta>
+<immagine>immagini/dischi/1995_meathead_zeni_geva_show_you_their_duelling_banjos.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="00">
+<stile>copertina in bianco e nero</stile>
+<nome>Urla dal granducato</nome>
+<anno>2002</anno>
+<citta>Pisa</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Get out of my life woman di Radio Zero</nome>
+<anno>2002</anno>
+<citta>Luni</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="00">
+<stile>copertina in bianco e nero</stile>
+<nome>Gargantha di Evolution so far</nome>
+<anno>2005</anno>
+<citta>Bottagna</citta>
+<immagine>immagini/dischi/1993_evolution_so_far_gargantha.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copDisco" periodo="00">
+<stile>copertina in bianco e nero</stile>
+<nome>Urla dal granducato : volume 2</nome>
+<anno>2006</anno>
+<citta>Pisa</citta>
+<immagine>immagini/dischi/1994_urla_dal_granducato_volume_2 (1).jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="80">
+<stile>copertina a colori</stile>
+<nome>The winterland days di Jimi Hendrix</nome>
+<anno>1989</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1989_jimi_hendrix_the_winterland_days.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="80">
+<stile>copertina a colori e booklet in bianco e nero</stile>
+<nome>Live at the Opera House : Amsterdam 29/9/69 di The Who</nome>
+<anno>1989</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1989_the_who_live_at_the_opera_house_amsterdam_29_9_69.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="80">
+<stile>copertina a colori e booklet a colori</stile>
+<nome>Live at Woodstock di Jimi Hendrix, Gypsy Sun and Rainbows</nome>
+<anno>1989</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1989_jimi_hendrix_gypsy_sun_and_rainbows_live_at_woodstock.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="80">
+<stile>copertina a colori</stile>
+<nome>'69 in flames di Led Zeppelin</nome>
+<anno>1989</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1989_led_zeppelin_69_in_flames.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Fuel on fire di Van Halen</nome>
+<anno>1990</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1990_van_halen_fuel_on_fire.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Resurrecting Dragons di Yes</nome>
+<anno>1990</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1990_yes_resurrecting_dragons.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Silver Bullet di Guns N' Roses</nome>
+<anno>1990</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1990_guns_n_roses_silver_bullet.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Black out in London di AC/DC</nome>
+<anno>1991</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1991_ac_dc_black_out_in_london.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>The first thunder di Steve Ray Vaughan</nome>
+<anno>1991</anno>
+<citta>La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Recorded live in Japan di Santana Band + Jeff Beck Band + Steve Lukather Lotus Jem</nome>
+<anno>1992</anno>
+<citta>s.l.</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Darkmen di The Cure</nome>
+<anno>1992</anno>
+<citta>La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Axeman di Randy Rhoads</nome>
+<anno>1992</anno>
+<citta>La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copCd" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Donna you gonna di Frank Zappa</nome>
+<anno>1992</anno>
+<citta>La Spezia</citta>
+<immagine>immagini/cd/1991_frank_zappa_donna_you_wanna.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="80">
+<stile>copertina a colori</stile>
+<nome>Thee Wizards : OV OV</nome>
+<anno>1988</anno>
+<citta>Brighton</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina a colori, collage e fumetto</stile>
+<nome>Decoder</nome>
+<anno>1992</anno>
+<citta>Milano</citta>
+<immagine>immagini/libri/1991_decoder_rivista_internazionale_underground.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>quarta di copertina e illustrazione in bianco e nero</stile>
+<nome>William S. Burroughs di Brion Gysin</nome>
+<anno>1992</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina a colori e fumetto in bianco e nero</stile>
+<nome>Decoder</nome>
+<anno>1993</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>quarta di copertina e manifesto a colori</stile>
+<nome>Fun &amp; Games</nome>
+<anno>1994</anno>
+<citta>Netherlands</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>quarta di copertina a colori</stile>
+<nome>J. G. Ballard</nome>
+<anno>1994</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina e illustrazione in bianco e nero</stile>
+<nome>Meathead</nome>
+<anno>1994</anno>
+<citta>Firenze</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina e illustrazioni in bianco e nero</stile>
+<nome>TO EPGASTHRI TOU di KAQHGHTH BAD TRIP</nome>
+<anno>1995</anno>
+<citta>s.l.</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina a colori</stile>
+<nome>Centri sociali: che impresa! a cura di Primo Moroni, et al.</nome>
+<anno>1995</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina e quarta di copertina a colori</stile>
+<nome>Derive Approdi</nome>
+<anno>1996</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina in bianco e nero</stile>
+<nome>Net.gener@tion di Luther Blisset</nome>
+<anno>1996</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina e quarta di copertina a colori</stile>
+<nome>Nostradamus : le nuove profezie fino al 2025 di Jean-Charles De Fontbrune</nome>
+<anno>1996</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina</stile>
+<nome>Totò, Peppino e la guerra Psichica di Luther Blissett</nome>
+<anno>1996</anno>
+<citta>Udine</citta>
+<immagine>immagini/libri/1996_luther_blissett_toto_peppino_e_la_guerra_psichica.webp</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina, terza e quarta di copertina, con disegni interni</stile>
+<nome>La Bestia 1</nome>
+<anno>1997</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina, quarta di copertina e illustrazioni in bianco e nero</stile>
+<nome>La chiesa del Subgenius</nome>
+<anno>1997</anno>
+<citta>Sarzana</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina a colori e intervista</stile>
+<nome>Cyber Zone : trimestrale visionario di Palermo</nome>
+<anno>1998</anno>
+<citta>Palermo</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina e quarta di copertina a colori</stile>
+<nome>In girum imus nocte et consumimur igni di Guy Debord</nome>
+<anno>1998</anno>
+<citta>Milano</citta>
+<immagine>immagini/libri/1999_guy_debord_in_girum_imus_nocte_et_consumimur_igni.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina in bianco e nero</stile>
+<nome>Fiori di fuoco</nome>
+<anno>1998</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina in bianco e nero</stile>
+<nome>L'ultimo capodanno di Niccolò Ammaniti</nome>
+<anno>1998</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina in bianco e nero</stile>
+<nome>Il corvo : 25 poesie di Edgar Allan Poe</nome>
+<anno>1999</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="90">
+<stile>copertina e quarta di copertina a colori</stile>
+<nome>Fango di Niccolò Ammaniti</nome>
+<anno>1999</anno>
+<citta>Milano</citta>
+<immagine>immagini/libri/1996_niccolo_ammaniti_fango.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Avatär</nome>
+<anno>2000</anno>
+<citta>Kipple</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina e quarta di copertina</stile>
+<nome>Mondadori News</nome>
+<anno>2000</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Pulp</nome>
+<anno>2000</anno>
+<citta>Torino</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>quarta di copertina e disegno in bianco e nero</stile>
+<nome>Decoder : raccolta vol. 1-4</nome>
+<anno>2000</anno>
+<citta>Milano</citta>
+<immagine>immagini/libri/1997_decoder_raccolta.webp</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina in bianco e nero</stile>
+<nome>Le radici del futuro di T. L. Friedman</nome>
+<anno>2000</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori e quarta di copertina in bianco e nero</stile>
+<nome>Ti prendo e ti porto via di Niccolò Ammaniti</nome>
+<anno>2000</anno>
+<citta>Milano</citta>
+<immagine>immagini/libri/1999_niccolo_ammaniti_ti_prendo_e_ti_porto_via.webp</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina e quarta di copertina in bianco e nero</stile>
+<nome>La donna fantasma di Cornell Woolrich</nome>
+<anno>2000</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina in bianco e nero e fumetto in bianco e nero</stile>
+<nome>Aparte : quaderno creativo n. 3</nome>
+<anno>2001</anno>
+<citta>Venezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Universongdom</nome>
+<anno>2001</anno>
+<citta>Ravenna</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Numb</nome>
+<anno>2002</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>La guerra dei mondi : scenari d'occidente dopo le Twin Towers</nome>
+<anno>2002</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Capitale &amp; Linguaggio : dalla new economy all'economia della guerra di Christian Marazzi</nome>
+<anno>2002</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Che cosa sappiamo della mente di V. S. Ramachandran</nome>
+<anno>2004</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina e quarta di copertina a colori</stile>
+<nome>Ti prendo e ti porto via di Niccolò Ammaniti</nome>
+<anno>2004</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Guerra : scenari della nuova grande trasformazione</nome>
+<anno>2004</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori e illustrazione in bianco e nero</stile>
+<nome>Upperground</nome>
+<anno>2005</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Next Exit</nome>
+<anno>2006</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>copertina a colori</stile>
+<nome>Philip K. Dick : la macchina della paranoia : enciclopedia dickiana di Antonio Caronia e Domenico Gallo</nome>
+<anno>2006</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="copLibro" periodo="00">
+<stile>quarta di copertina in bianco e nero</stile>
+<nome>Aparte : quaderno creativo</nome>
+<anno>2007</anno>
+<citta>Venezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="80">
+<stile>collage a colori</stile>
+<nome>Tempi Supplementari</nome>
+<anno>1985</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="80">
+<stile>collage a colori</stile>
+<nome>Tempi Supplementari n. 9</nome>
+<anno>1986</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="80">
+<stile>collage a colori</stile>
+<nome>Tempi Supplementari n. 10/11</nome>
+<anno>1987</anno>
+<citta>Roma</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="80">
+<stile>fumetto in bianco e nero</stile>
+<nome>Tecno Body way</nome>
+<anno>1989</anno>
+<citta>Catania</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto in bianco e nero</stile>
+<nome>Effusioni nucleari in Decoder</nome>
+<anno>1990</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>True stories di G. L. Lerici</nome>
+<anno>1990</anno>
+<citta>Kangasala</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Il Pasto nudo : liberamento ispirato al romanzo di W. S. Burroughs di Professor Bad Trip</nome>
+<anno>1992</anno>
+<citta>ShaKe Edizioni, Milano</citta>
+<immagine>immagini/fumetti/1992_professor_bad_trip_il_pasto_nudo.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Mondo Tecno di Bad Trip Comix</nome>
+<anno>1993</anno>
+<citta>R&amp;R Editrice, Spoleto</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Double Dose di Prof. Bad Trip e Matteo Guarnaccia</nome>
+<anno>1994</anno>
+<citta>Comicland, La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Bad Trip Comix in ComicLand</nome>
+<anno>1994</anno>
+<citta>Comicland, La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto in bianco e nero</stile>
+<nome>Kathodic Karma in Talking Heads</nome>
+<anno>1994</anno>
+<citta>Spoleto</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Bad Mutants in Comicland Comix</nome>
+<anno>1995</anno>
+<citta>Comicland, La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Underground masters di P. Bad Trip e Matteo Guarnaccia</nome>
+<anno>1996</anno>
+<citta>Comicland, La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto</stile>
+<nome>Psycho di Professor Bad Trip</nome>
+<anno>1996</anno>
+<citta>Comicland, La Spezia</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto in bianco e nero</stile>
+<nome>Fumetto in Decoder n. 6-7-8</nome>
+<anno>1996</anno>
+<citta>Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="90">
+<stile>fumetto in bianco e nero</stile>
+<nome>Fumetto in The Earwax Museum</nome>
+<anno>1996</anno>
+<citta>Sittard</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="00">
+<stile>fumetto in bianco e nero</stile>
+<nome>Psycho in Avatar</nome>
+<anno>2001</anno>
+<citta>Kipple</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="00">
+<stile>fumetto</stile>
+<nome>Almanacco Apocalittico di Professor Bad Trip</nome>
+<anno>2002</anno>
+<citta>Mondadori, Milano</citta>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="00">
+<stile>fumetto</stile>
+<nome>L'arte del Prof. Bad Trip</nome>
+<anno>2007</anno>
+<citta>ShaKe Edizioni, Milano</citta>
+<immagine>immagini/fumetti/2007_professor_bad_trip_l_arte_del_prof_bad_trip.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="fumetto" periodo="10">
+<stile>fumetto</stile>
+<nome>I fumetti del Prof. Bad Trip</nome>
+<anno>2016</anno>
+<citta>ShaKe Edizioni, Milano</citta>
+<immagine>immagini/fumetti/2016_professor_bad_trip_i_fumetti_del_prof_bad_trip.jpg</immagine>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="80">
+<stile>cassetta, 5 brani degli Holocaust</stile>
+<nome>Assillo Politico di Aa. Vv.</nome>
+<anno>1982</anno>
+<citta>Play At Your Home Records</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="80">
+<stile>cassetta, 1 brano degli Holocaust</stile>
+<nome>Dark Movements n. 1 di Aa. Vv.</nome>
+<anno>1982</anno>
+<citta>Oscuri Prodotti Records</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="80">
+<stile>cassetta, 1 brano degli Holocaust</stile>
+<nome>Some Waves di Aa. Vv.</nome>
+<anno>1983</anno>
+<citta>Graf Haufen Tapes</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="80">
+<stile>cassetta split tape, 8 brani di Azione Aliena (Prof. Bad Trip, Tingis e Plattinum Titti)</stile>
+<nome>Mostruosità Acquisita di Azione Aliena / Yellow Yawn</nome>
+<anno>1987</anno>
+<citta>Alien-Action Tapes</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="80">
+<stile>cassetta, 1 brano dei Garbage Pail Kids</stile>
+<nome>Batmaniacs On The Loose di Aa. Vv.</nome>
+<anno>1989</anno>
+<citta>Trash Tapes</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="80">
+<stile>cassetta, 2 brani dei Garbage Pail Kids</stile>
+<nome>Soundtrekking For Mutants di Aa. Vv.</nome>
+<anno>1989</anno>
+<citta>Trash Tapes</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="90">
+<stile>cassetta, 11 brani del progetto sonoro di Professor Bad Trip e Jenamarie Filaccio</stile>
+<nome>Garbage Pail Kids di Garbage Pail Kids</nome>
+<anno>1990</anno>
+<citta>Sub-Trash Tapes</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="90">
+<stile>cassetta, 17 brani di Garbage Pail Kids e altre ghost-band create da Gianluca Lerici</stile>
+<nome>Trash Kids di Aa. Vv.</nome>
+<anno>1991</anno>
+<citta>Organic Mutation Institute</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="00">
+<stile>lp/cd, 1 brano degli Holocaust</stile>
+<nome>Urla dal Granducato di Aa. Vv.</nome>
+<anno>2002</anno>
+<citta>Area Pirata</citta>
+</pubblicazione>
+
+<pubblicazione categoria="discografia" periodo="00">
+<stile>demo, 3 tracce inedite, testo e voce del Prof. Bad Trip</stile>
+<nome>Saluti dall'inferno di The Doodlebugs con Gianluca Lerici</nome>
+<anno>2006</anno>
+<citta>s.l.</citta>
+</pubblicazione>
+
+</elenco>

@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
+<head>
+	<title>Contatti - profbadtrip</title>
+	<meta name="description" content="Contatti del sito dedicato a Gianluca Lerici, alias Professor Bad Trip, e alla sua arte visiva." />
+	<meta name="author" content="Tiziano Pucci" />
+	<meta name="keywords" content="gianluca lerici, bad trip, professor bad trip, prof bad trip, arte visiva, arte la spezia, contatti" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="robots" content="index,follow" />
+	<meta name="geo.region" content="IT-SP" />
+	<meta name="geo.placename" content="La Spezia" />
+	<meta name="geo.position" content="44.10245;9.824083" />
+	<meta name="ICBM" content="44.10245, 9.824083" />
+	<link rel="stylesheet" type="text/css" href="stile.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="stampa.css" />
+	<link rel="stylesheet" type="text/css" media="handheld, only screen and (max-width: 560px), only screen and (max-device-width: 560px)" href="mobile.css" />
+	<link rel="canonical" href="https://tipucci.it/progetti/profbadtrip/contatti.html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-59878302-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+</head>
+<body class="page-contatti">
+
+	<div id="testa">
+		<a href="index.html"><img src="immagini/logo-badtrip.jpg" alt="Simbolo di Professor Bad Trip"/></a>
+		<button id="navToggle" type="button" aria-controls="nav" aria-expanded="false">Menu</button>
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galleria.html">Galleria</a></li>
+				<li><a href="pubblicazioni.html">Pubblicazioni</a></li>
+				<li><a href="biografia.html">Biografia</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<h1>Professor Bad Trip - l'arte visuale di Gianluca Lerici</h1>
+
+	<div id="contenuto">
+
+		<p id="titoloStampa">Bad Trip > Contatti</p>
+
+		<div id="contatti">
+			<h2>Contatti</h2>
+			<p>Per maggiori informazioni su Gianluca Lerici e le sue opere: <a href="mailto:ignota16@libero.it">ignota16@libero.it</a></p>
+			<p>Questo sito &egrave; stato realizzato da Tiziano Pucci come progetto per l'esame di Progettazione e programmazione web del corso di laurea in Informatica Umanistica dell'Universit&agrave; di Pisa. Il sito rispetta gli standard W3C ed &egrave; stato validato come XHTML 1.0 Strict e CSS3. Gli script Javascript utilizzati per le pagine Galleria e Pubblicazioni sono originali.</p>
+			<a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" width="60em" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img width="60em" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valido!" /></a>
+			<p>Grazie a Jena per la disponibilit&agrave;.</p>
+
+		</div>
+
+	</div>
+	<div id="infobox">
+		<p>profbadtrip &egrave; un sito indipendente e senza scopo di lucro dedicato a <a href="http://it.wikipedia.org/wiki/Gianluca_Lerici" target="_blank" rel="noopener noreferrer">Gianluca Lerici</a> &middot; <a href="credits.html">Credits</a></p>
+	</div>
+
+	<button type="button" id="tornaSu" class="torna-su" aria-label="Torna in alto">&#8593;</button>
+
+	<script type="text/javascript">
+	(function () {
+		var toggle = document.getElementById('navToggle');
+		var nav = document.getElementById('nav');
+		if (!toggle || !nav) {
+			return;
+		}
+
+		document.body.className += (document.body.className ? ' ' : '') + 'js-nav';
+
+		toggle.onclick = function () {
+			var isOpen = nav.className.indexOf('nav-open') !== -1;
+			nav.className = isOpen ? nav.className.replace(' nav-open', '').replace('nav-open', '') : nav.className + ' nav-open';
+			toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+		};
+	})();
+	</script>
+	<script type="text/javascript">
+	(function () {
+		var tornaSu = document.getElementById('tornaSu');
+		var ultimaPosizione = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+		if (!tornaSu) {
+			return;
+		}
+
+		function aggiornaTornaSu() {
+			var footer = document.getElementById('infobox');
+			var posizioneCorrente = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+			var mostra = posizioneCorrente > 420 && posizioneCorrente < ultimaPosizione;
+			var copreFooter = false;
+			if (footer && footer.getBoundingClientRect) {
+				copreFooter = footer.getBoundingClientRect().top < (window.innerHeight - 72);
+			}
+			if (mostra && !copreFooter) {
+				tornaSu.className = 'torna-su torna-su--visibile';
+			} else {
+				tornaSu.className = 'torna-su';
+			}
+			ultimaPosizione = posizioneCorrente;
+		}
+
+		tornaSu.onclick = function () {
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		};
+
+		if (window.addEventListener) {
+			window.addEventListener('scroll', aggiornaTornaSu, false);
+		} else {
+			window.onscroll = aggiornaTornaSu;
+		}
+
+		aggiornaTornaSu();
+	})();
+	</script>
+
+</body>
+</html>
