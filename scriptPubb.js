@@ -161,7 +161,7 @@ function aggiornaControlliPubblicazioni(){
 			controlli.innerHTML = '<button type="button" id="mostraAltrePubblicazioni" class="galleria-loadmore">Mostra altre pubblicazioni</button>';
 			pulsante = document.getElementById("mostraAltrePubblicazioni");
 			if (pulsante){
-				pulsante.onclick = mostraAltrePubblicazioni;
+				pulsante.addEventListener("click", mostraAltrePubblicazioni, false);
 			}
 		}
 		if (pulsante){
@@ -197,7 +197,7 @@ function agganciaEventiCover(){
 	var cover = document.getElementsByClassName("pubb-cover-button");
 	var i = 0;
 	for (i = 0; i < cover.length; i++){
-		cover[i].onclick = apriPubbLightboxDaCover;
+		cover[i].addEventListener("click", apriPubbLightboxDaCover, false);
 	}
 }
 
@@ -253,16 +253,24 @@ function mostraAltrePubblicazioni(){
 function apriPubbLightbox(cover, titolo){
 	var lightbox = document.getElementById("pubbLightbox");
 	var immagine = document.getElementById("pubbLightboxImage");
+	var chiudi = document.getElementById("chiudiPubbLightbox");
+	var pannello = document.getElementsByClassName("pubb-lightbox__panel");
 	if (!lightbox || !immagine){
 		return;
 	}
 
+	ultimoTriggerPubbLightbox = document.activeElement;
 	immagine.src = cover;
 	immagine.alt = "Copertina di " + titolo;
 	lightbox.className = "pubb-lightbox pubb-lightbox--aperto";
 	lightbox.setAttribute("aria-hidden", "false");
 	if (document.body.className.indexOf("lightbox-open") === -1){
 		document.body.className += (document.body.className ? " " : "") + " lightbox-open";
+	}
+	if (chiudi){
+		chiudi.focus();
+	} else if (pannello.length){
+		pannello[0].focus();
 	}
 }
 
@@ -279,6 +287,9 @@ function chiudiPubbLightbox(){
 		immagine.src = "";
 	}
 	document.body.className = document.body.className.replace(" lightbox-open", "").replace("lightbox-open", "");
+	if (ultimoTriggerPubbLightbox && ultimoTriggerPubbLightbox.focus){
+		ultimoTriggerPubbLightbox.focus();
+	}
 }
 
 function apriPubbLightboxDaCover(){
@@ -288,12 +299,32 @@ function apriPubbLightboxDaCover(){
 function gestisciTastieraLightboxPubblicazioni(evento){
 	var lightbox = document.getElementById("pubbLightbox");
 	var eventoTastiera = evento || window.event;
+	var pannello = document.getElementsByClassName("pubb-lightbox__panel");
+	var focusabili;
+	var primo;
+	var ultimo;
 	if (!lightbox || lightbox.className.indexOf("pubb-lightbox--aperto") === -1){
 		return;
 	}
 
 	if (eventoTastiera.keyCode === 27){
 		chiudiPubbLightbox();
+	} else if (eventoTastiera.keyCode === 9 && pannello.length){
+		focusabili = pannello[0].querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+		if (!focusabili.length){
+			eventoTastiera.preventDefault();
+			pannello[0].focus();
+			return;
+		}
+		primo = focusabili[0];
+		ultimo = focusabili[focusabili.length - 1];
+		if (eventoTastiera.shiftKey && document.activeElement === primo){
+			eventoTastiera.preventDefault();
+			ultimo.focus();
+		} else if (!eventoTastiera.shiftKey && document.activeElement === ultimo){
+			eventoTastiera.preventDefault();
+			primo.focus();
+		}
 	}
 }
 
@@ -371,6 +402,7 @@ var elencoPubb = new Elenco();
 var risultatiPubbCorrenti = [];
 var dimensionePubbVisibile = 0;
 var BATCH_PUBB = 14;
+var ultimoTriggerPubbLightbox = null;
 
 function inizializza(){
 	var c = document.getElementById("cerca");
@@ -379,7 +411,7 @@ function inizializza(){
 	var backdrop = document.getElementById("pubbLightboxBackdrop");
 	var i = 0;
 
-	c.onclick = mostraPubb;
+	c.addEventListener("click", mostraPubb, false);
 
 	elencoPubb.creaSel();
 	elencoPubb.creaSel2();
@@ -392,43 +424,31 @@ function inizializza(){
 	}
 
 	document.getElementById("selCat").value = "tutto";
-	document.getElementById("annoDa").oninput = function(){
+	document.getElementById("annoDa").addEventListener("input", function (){
 		aggiornaEtichetteAnni();
 		mostraPubb();
-	};
-	document.getElementById("annoA").oninput = function(){
+	}, false);
+	document.getElementById("annoA").addEventListener("input", function (){
 		aggiornaEtichetteAnni();
 		mostraPubb();
-	};
-	document.getElementById("selCat").onchange = function(){
+	}, false);
+	document.getElementById("selCat").addEventListener("change", function (){
 		sincronizzaCardCategoriaPubblicazioni();
 		mostraPubb();
-	};
+	}, false);
 	if (chiudi){
-		chiudi.onclick = chiudiPubbLightbox;
+		chiudi.addEventListener("click", chiudiPubbLightbox, false);
 	}
 	if (backdrop){
-		backdrop.onclick = chiudiPubbLightbox;
+		backdrop.addEventListener("click", chiudiPubbLightbox, false);
 	}
-	if (document.onkeydown){
-		var onkeydownPrecedente = document.onkeydown;
-		document.onkeydown = function(evento){
-			onkeydownPrecedente(evento);
-			gestisciTastieraLightboxPubblicazioni(evento);
-		};
-	} else {
-		document.onkeydown = gestisciTastieraLightboxPubblicazioni;
-	}
+	document.addEventListener("keydown", gestisciTastieraLightboxPubblicazioni, false);
 	for (i = 0; i < card.length; i++){
-		card[i].onclick = selezionaCardCategoriaPubblicazioni;
+		card[i].addEventListener("click", selezionaCardCategoriaPubblicazioni, false);
 	}
 	aggiornaEtichetteAnni();
 	sincronizzaCardCategoriaPubblicazioni();
 	mostraTutto();
 }
 
-if (window.addEventListener){
-	window.addEventListener("DOMContentLoaded", inizializza, false);
-} else {
-	window.onload = inizializza;
-}
+document.addEventListener("DOMContentLoaded", inizializza, false);

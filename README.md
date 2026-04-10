@@ -1,38 +1,174 @@
 # profbadtrip
 
-Sito statico dedicato a Gianluca Lerici, alias Professor Bad Trip.
+Archivio statico dedicato a Gianluca Lerici, alias Professor Bad Trip: un progetto editoriale e visivo che raccoglie una selezione di opere, pubblicazioni e materiali di contesto in un sito leggero, navigabile e pubblicabile su hosting statico.
 
-## Struttura attuale
+## Preview
 
-La struttura del repository resta volutamente semplice per mantenere compatibilita con GitHub Pages:
+- Demo: [https://profbadtrip.tipucci.it/](https://profbadtrip.tipucci.it/)
+- Repository: [https://github.com/tipucci/profbadtrip](https://github.com/tipucci/profbadtrip)
 
-- `index.html` e le altre pagine HTML stanno nella root.
-- `stile.css`, `mobile.css` e `stampa.css` gestiscono la presentazione.
-- `scriptGalleria.js`, `scriptPubb.js`, `data-galleria.js` e `data-pubblicazioni.js` gestiscono contenuti e interazioni.
-- `immagini/` contiene gli asset grafici del sito.
-- `404.html` gestisce le pagine non trovate su GitHub Pages.
-- `CNAME` imposta il dominio personalizzato `profbadtrip.tipucci.it`.
 
-## Stato deploy
+## Perche Esiste Il Progetto
 
-I riferimenti interni nei file HTML sono relativi, quindi il sito puo funzionare sia su GitHub Pages sia sul dominio personalizzato senza path hardcoded alla vecchia sottocartella.
+`profbadtrip` nasce come sito dedicato all'opera visiva di Gianluca Lerici, con l'obiettivo di costruire uno spazio semplice, indipendente e consultabile per esplorare immagini, pubblicazioni e riferimenti essenziali.
 
-Sono stati aggiornati:
+Il progetto parte da una base storica personale e viene ripreso, ripulito e adattato per una pubblicazione pubblica piu solida: non come esercizio astratto, ma come piccolo archivio web statico con una direzione visiva precisa e una struttura leggibile anche per chi arriva da fuori.
 
-- canonical URL
-- `robots.txt`
-- `sitemap.xml`
-- `CNAME`
+## Funzionalita Principali
 
-## Pubblicazione su GitHub Pages
+- Home editoriale con accesso rapido al documentario.
+- Galleria filtrabile per categoria e stile visivo.
+- Sezione pubblicazioni con filtri per tipologia e intervallo temporale.
+- Pagina biografica e pagina credits dedicate al contesto del progetto.
+- Lightbox per immagini e copertine.
+- Layout responsive senza dipendenze di build.
+- Compatibilita con GitHub Pages e hosting statico tradizionale.
+- Dominio personalizzato tramite file `CNAME`.
+- File utili al deploy statico gia presenti: `404.html`, `robots.txt`, `sitemap.xml`.
 
-1. Pubblica il branch `main` su GitHub.
-2. In GitHub apri `Settings > Pages`.
-3. Imposta `Deploy from a branch`.
-4. Seleziona il branch `main` e la cartella `/ (root)`.
-5. Verifica che il file `CNAME` venga servito correttamente.
-6. Configura il DNS di `profbadtrip.tipucci.it` verso GitHub Pages.
+## Stack Utilizzato
 
-## Nota
+- HTML
+- CSS
+- JavaScript vanilla
+- Google Fonts
+- GitHub Pages per il deploy statico
 
-Se vuoi, nel passo successivo posso anche fare il commit, il push su GitHub e lasciarti il repository gia pronto per attivare Pages.
+Il progetto non usa framework frontend, bundler o dipendenze runtime: tutto il sito e composto da file statici versionati direttamente nel repository.
+
+## Struttura Del Progetto
+
+```text
+profbadtrip/
+|- index.html
+|- biografia.html
+|- credits.html
+|- galleria.html
+|- pubblicazioni.html
+|- 404.html
+|- CNAME
+|- robots.txt
+|- sitemap.xml
+|- favicon.ico
+|- stile.css
+|- mobile.css
+|- stampa.css
+|- shared.js
+|- scriptGalleria.js
+|- scriptPubb.js
+|- data-galleria.js
+|- data-pubblicazioni.js
+|- immagini/
+`- README.md
+```
+
+### File principali
+
+- `index.html`: homepage del progetto.
+- `galleria.html`: archivio visivo delle opere con filtri.
+- `pubblicazioni.html`: elenco filtrabile di pubblicazioni e copertine.
+- `biografia.html`: profilo biografico sintetico.
+- `credits.html`: note di contesto, attribuzioni e crediti.
+- `stile.css`: stylesheet principale desktop.
+- `mobile.css`: adattamenti per schermi piccoli.
+- `stampa.css`: regole per la stampa.
+- `shared.js`: comportamenti condivisi dell'interfaccia.
+- `data-galleria.js`: dataset della galleria.
+- `data-pubblicazioni.js`: dataset delle pubblicazioni.
+
+## Avvio Locale
+
+Il progetto non richiede installazione di dipendenze.
+
+### Opzione veloce
+
+Apri direttamente `index.html` nel browser.
+
+### Opzione consigliata
+
+Per evitare differenze tra file aperti localmente e sito servito via HTTP, usa un piccolo server statico locale.
+
+Esempi:
+
+```bash
+python -m http.server 8000
+```
+
+oppure, se usi Node.js:
+
+```bash
+npx serve .
+```
+
+Poi apri:
+
+```text
+http://localhost:8000
+```
+
+## Come Modificarlo
+
+### Contenuti
+
+- Per aggiungere o correggere opere della galleria, aggiorna `data-galleria.js`.
+- Per aggiungere o correggere pubblicazioni, aggiorna `data-pubblicazioni.js`.
+- Per testi e contenuti editoriali, modifica direttamente i file HTML.
+
+### Stili
+
+- Usa `stile.css` per la base grafica.
+- Usa `mobile.css` per gli adattamenti responsive.
+- Usa `stampa.css` solo per la resa print.
+
+### Interazioni
+
+- `shared.js` contiene la logica condivisa di navigazione e utility UI.
+- `scriptGalleria.js` gestisce filtri, rendering e lightbox della galleria.
+- `scriptPubb.js` gestisce filtri e lightbox delle pubblicazioni.
+
+## Deploy
+
+Il progetto e pensato per essere pubblicato come sito statico, senza build step.
+
+### GitHub Pages
+
+1. Pubblica il repository su GitHub.
+2. Vai in `Settings > Pages`.
+3. Seleziona `Deploy from a branch`.
+4. Scegli il branch `main`.
+5. Imposta la cartella `/ (root)`.
+6. Verifica che `CNAME` sia presente se usi un dominio personalizzato.
+
+### Hosting statico generico
+
+Puoi pubblicare il contenuto del repository anche su qualunque hosting statico che serva file HTML, CSS, JS e asset senza trasformazioni.
+
+Per il dominio personalizzato, assicurati che:
+
+- i path interni restino relativi;
+- `404.html` sia incluso;
+- `robots.txt` e `sitemap.xml` puntino al dominio corretto;
+- il DNS del sottodominio sia configurato verso il provider scelto.
+
+## Licenza
+
+Il codice del progetto e distribuito con licenza MIT.
+
+La licenza MIT si applica al codice del sito. Le opere, le immagini, i video e gli eventuali contenuti editoriali presenti nel repository non sono automaticamente rilasciati sotto licenza MIT salvo esplicita indicazione e restano dei rispettivi aventi diritto.
+
+Per dettagli, vedi il file `LICENSE` e la pagina `credits.html`.
+
+## Possibili Sviluppi Futuri
+
+- consolidare le sorgenti dati in un unico formato;
+- migliorare ulteriormente metadati SEO e social preview;
+- aggiungere una cover Open Graph dedicata;
+- rifinire ulteriormente la documentazione dei diritti e delle attribuzioni dei contenuti;
+- introdurre una documentazione editoriale piu ampia sulle opere.
+
+## Autore
+
+**Tiziano Pucci**
+
+- Sito: [https://www.tipucci.it](https://www.tipucci.it)
+- Progetto: `profbadtrip`

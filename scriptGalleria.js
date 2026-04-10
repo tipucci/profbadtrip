@@ -1,19 +1,3 @@
-function caricaXML(nomeFile) {
-var xmlhttp;
-try {
-if (window.XMLHttpRequest) {
-xmlhttp = new XMLHttpRequest();
-} else {
-xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-}
-xmlhttp.open("GET", nomeFile, false);
-xmlhttp.send();
-return xmlhttp.responseXML;
-} catch (errore) {
-return null;
-}
-}
-
 function Opera(color, categ, sorg, sorg2, tit, dim, ann, tec){
 	this.colore = color;
 	this.categoria = categ;
@@ -189,6 +173,10 @@ function haAnteprimaOpera(opera){
 	return !!sorgenteAnteprimaOpera(opera);
 }
 
+function haTitoloOpera(opera){
+	return !!(opera && opera.titolo && opera.titolo.replace(/\s+/g, "").length);
+}
+
 function sorgenteFallbackLocale(sorgente){
 	return "";
 }
@@ -239,7 +227,7 @@ function aggiornaControlliGalleria(){
 			controlli.innerHTML = '<button type="button" id="mostraAltreOpere" class="galleria-loadmore">Mostra altre opere</button>';
 			pulsante = document.getElementById("mostraAltreOpere");
 			if (pulsante){
-				pulsante.onclick = mostraAltreOpere;
+				pulsante.addEventListener("click", mostraAltreOpere, false);
 			}
 		}
 		if (pulsante){
@@ -290,7 +278,7 @@ function collegaMiniature(immagini){
 
 	miniature = immagini.getElementsByTagName("button");
 	for (i = 0; i < miniature.length; i++){
-		miniature[i].onclick = apriLightboxDaMiniatura;
+		miniature[i].addEventListener("click", apriLightboxDaMiniatura, false);
 	}
 
 	immaginiCard = immagini.getElementsByTagName("img");
@@ -313,7 +301,9 @@ function renderRisultati(risultati){
 	var opereDaMostrare;
 	var i;
 
-	risultatiCorrenti = (risultati || []).filter(haAnteprimaOpera);
+	risultatiCorrenti = (risultati || []).filter(function (opera) {
+		return haAnteprimaOpera(opera) && haTitoloOpera(opera);
+	});
 	opereCaricate = Math.min(BATCH_OPERE, risultatiCorrenti.length);
 
 	if (!risultatiCorrenti.length){
@@ -570,10 +560,13 @@ function aggiornaLightbox(){
 
 function apriLightbox(indice){
 	var lightbox = document.getElementById("lightbox");
+	var chiudi = document.getElementById("chiudiLightbox");
+	var pannello = document.getElementsByClassName("lightbox__panel");
 	if (!lightbox || !risultatiCorrenti.length){
 		return;
 	}
 
+	ultimoTriggerLightbox = document.activeElement;
 	indiceCorrente = indice;
 	zoomCorrente = 1;
 	aggiornaLightbox();
@@ -581,6 +574,11 @@ function apriLightbox(indice){
 	lightbox.setAttribute("aria-hidden", "false");
 	if (document.body.className.indexOf("lightbox-open") === -1){
 		document.body.className += (document.body.className ? " " : "") + " lightbox-open";
+	}
+	if (chiudi){
+		chiudi.focus();
+	} else if (pannello.length){
+		pannello[0].focus();
 	}
 }
 
@@ -593,6 +591,9 @@ function chiudiLightbox(){
 	lightbox.className = "lightbox";
 	lightbox.setAttribute("aria-hidden", "true");
 	document.body.className = document.body.className.replace(" lightbox-open", "").replace("lightbox-open", "");
+	if (ultimoTriggerLightbox && ultimoTriggerLightbox.focus){
+		ultimoTriggerLightbox.focus();
+	}
 }
 
 function apriLightboxDaMiniatura(){
@@ -666,6 +667,10 @@ function zoomOut(){
 function gestisciTastiera(evento){
 	var lightbox = document.getElementById("lightbox");
 	var eventoTastiera = evento || window.event;
+	var focusabili;
+	var primo;
+	var ultimo;
+	var pannello = document.getElementsByClassName("lightbox__panel");
 	if (!lightbox || lightbox.className.indexOf("lightbox--aperto") === -1){
 		return;
 	}
@@ -676,6 +681,22 @@ function gestisciTastiera(evento){
 		mostraPrecedente();
 	} else if (eventoTastiera.keyCode === 39){
 		mostraSuccessiva();
+	} else if (eventoTastiera.keyCode === 9 && pannello.length){
+		focusabili = pannello[0].querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+		if (!focusabili.length){
+			eventoTastiera.preventDefault();
+			pannello[0].focus();
+			return;
+		}
+		primo = focusabili[0];
+		ultimo = focusabili[focusabili.length - 1];
+		if (eventoTastiera.shiftKey && document.activeElement === primo){
+			eventoTastiera.preventDefault();
+			ultimo.focus();
+		} else if (!eventoTastiera.shiftKey && document.activeElement === ultimo){
+			eventoTastiera.preventDefault();
+			primo.focus();
+		}
 	}
 }
 
@@ -685,6 +706,7 @@ var indiceCorrente = 0;
 var zoomCorrente = 1;
 var opereCaricate = 0;
 var BATCH_OPERE = 12;
+var ultimoTriggerLightbox = null;
 
 function inizializza(){
 	var c = document.getElementById("cerca");
@@ -700,34 +722,29 @@ function inizializza(){
 	var immagineLightbox = document.getElementById("lightboxImage");
 	var i = 0;
 
-	c.onclick = mostraOpere;
-	precedente.onclick = mostraPrecedente;
-	successiva.onclick = mostraSuccessiva;
-	chiudi.onclick = chiudiLightbox;
-	meno.onclick = zoomOut;
-	piu.onclick = zoomIn;
-	backdrop.onclick = chiudiLightbox;
+	c.addEventListener("click", mostraOpere, false);
+	precedente.addEventListener("click", mostraPrecedente, false);
+	successiva.addEventListener("click", mostraSuccessiva, false);
+	chiudi.addEventListener("click", chiudiLightbox, false);
+	meno.addEventListener("click", zoomOut, false);
+	piu.addEventListener("click", zoomIn, false);
+	backdrop.addEventListener("click", chiudiLightbox, false);
 	if (panel.length){
-		panel[0].onclick = gestisciClickLightbox;
+		panel[0].addEventListener("click", gestisciClickLightbox, false);
 	}
 	if (immagineLightbox){
 		immagineLightbox.onerror = gestisciErroreLightbox;
 	}
 	renderPlaceholderGalleria();
 	for (i = 0; i < stileCard.length; i++){
-		stileCard[i].onclick = selezionaCardStile;
+		stileCard[i].addEventListener("click", selezionaCardStile, false);
 	}
 	for (i = 0; i < categoriaCard.length; i++){
-		categoriaCard[i].onclick = selezionaCardCategoria;
+		categoriaCard[i].addEventListener("click", selezionaCardCategoria, false);
 	}
 
 	if (typeof PROFBADTRIP_GALLERIA !== "undefined" && PROFBADTRIP_GALLERIA.length){
 		inizializzaDaDati(PROFBADTRIP_GALLERIA);
-	} else {
-		var nodo = caricaXML("elenco.xml");
-		if (nodo){
-			elencoOpere.inizializza(nodo);
-		}
 	}
 
 	mescolaOpere(elencoOpere.collezione);
@@ -737,22 +754,18 @@ function inizializza(){
 
 	document.getElementById("sceltaCateg").value = "tutto";
 	document.getElementById("sceltaColor").value = "tutto2";
-	document.getElementById("sceltaCateg").onchange = function(){
+	document.getElementById("sceltaCateg").addEventListener("change", function (){
 		sincronizzaCardCategoria();
 		mostraOpere();
-	};
-	document.getElementById("sceltaColor").onchange = function(){
+	}, false);
+	document.getElementById("sceltaColor").addEventListener("change", function (){
 		sincronizzaCardStile();
 		mostraOpere();
-	};
+	}, false);
 	sincronizzaCardCategoria();
 	sincronizzaCardStile();
 	mostraTutto();
-	document.onkeydown = gestisciTastiera;
+	document.addEventListener("keydown", gestisciTastiera, false);
 }
 
-if (window.addEventListener){
-	window.addEventListener("DOMContentLoaded", inizializza, false);
-} else {
-	window.onload = inizializza;
-}
+document.addEventListener("DOMContentLoaded", inizializza, false);

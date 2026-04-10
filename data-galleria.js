@@ -2,56 +2,56 @@
     {
         "colore":  "colore",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-1-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-1.jpg"
+        "sorgente":  "./immagini/q1mod.jpg",
+        "sorgente2":  "./immagini/q1.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-2-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-2.jpg"
+        "sorgente":  "./immagini/q2mod.jpg",
+        "sorgente2":  "./immagini/q2.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-3-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-3.jpg"
+        "sorgente":  "./immagini/q3mod.jpg",
+        "sorgente2":  "./immagini/q3.jpg"
     },
     {
         "colore":  "b/n",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-4-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-4.jpg"
+        "sorgente":  "./immagini/q4mod.jpg",
+        "sorgente2":  "./immagini/q4.jpg"
     },
     {
         "colore":  "b/n",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-5-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-5.jpg"
+        "sorgente":  "./immagini/q5mod.jpg",
+        "sorgente2":  "./immagini/q5.jpg"
     },
     {
         "colore":  "b/n",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-6-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-6.jpg"
+        "sorgente":  "./immagini/q6mod.jpg",
+        "sorgente2":  "./immagini/q6.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-7-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-7.jpg"
+        "sorgente":  "./immagini/q7mod.jpg",
+        "sorgente2":  "./immagini/q7.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-8-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-8.jpg"
+        "sorgente":  "./immagini/q8mod.jpg",
+        "sorgente2":  "./immagini/q8.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "quadro",
-        "sorgente":  "./immagini/professor-bad-trip-quadro-9-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-quadro-9.jpg"
+        "sorgente":  "./immagini/q9mod.jpg",
+        "sorgente2":  "./immagini/q9.jpg"
     },
     {
         "colore":  "b/n",
@@ -86,32 +86,32 @@
     {
         "colore":  "b/n",
         "categoria":  "illustrazione",
-        "sorgente":  "./immagini/professor-bad-trip-illustrazione-1-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-illustrazione-1.jpg"
+        "sorgente":  "./immagini/ill1mod.jpg",
+        "sorgente2":  "./immagini/ill1.jpg"
     },
     {
         "colore":  "b/n",
         "categoria":  "illustrazione",
-        "sorgente":  "./immagini/professor-bad-trip-illustrazione-2-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-illustrazione-2.jpg"
+        "sorgente":  "./immagini/ill2mod.jpg",
+        "sorgente2":  "./immagini/ill2.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "illustrazione",
-        "sorgente":  "./immagini/professor-bad-trip-illustrazione-3-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-illustrazione-3.jpg"
+        "sorgente":  "./immagini/ill3mod.jpg",
+        "sorgente2":  "./immagini/ill3.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "illustrazione",
-        "sorgente":  "./immagini/professor-bad-trip-illustrazione-4-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-illustrazione-4.jpg"
+        "sorgente":  "./immagini/ill4mod.jpg",
+        "sorgente2":  "./immagini/ill4.jpg"
     },
     {
         "colore":  "colore",
         "categoria":  "illustrazione",
-        "sorgente":  "./immagini/professor-bad-trip-illustrazione-5-thumb.jpg",
-        "sorgente2":  "./immagini/professor-bad-trip-illustrazione-5.jpg"
+        "sorgente":  "./immagini/ill5mod.jpg",
+        "sorgente2":  "./immagini/ill5.jpg"
     },
     {
         "colore":  "colore",
@@ -174,7 +174,7 @@
         "tecnica":  "serigrafia"
     },
     {
-        "colore":  "b/n",
+        "colore":  "colore",
         "categoria":  "serigrafia",
         "sorgente":  "https://www.tekegallery.com/store/image/thumbnails/18/85/bad_mutants_seri_48x33_jpg-100437-2048x1524.jpg",
         "sorgente2":  "https://www.tekegallery.com/store/image/thumbnails/18/85/bad_mutants_seri_48x33_jpg-100437-2048x1524.jpg",

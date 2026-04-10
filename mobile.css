@@ -137,31 +137,6 @@ body.js-nav #nav{
 body.js-nav #nav.nav-open{
 	display:block;
 }
-.skip-link{
-	position:absolute;
-	left:0.75em;
-	top:-4em;
-	z-index:250;
-	padding:0.75em 0.95em;
-	background-color:#111111;
-	color:#ffffff;
-	text-decoration:none;
-	font-weight:700;
-	border:0.15em solid #ffffff;
-}
-.skip-link:focus{
-	top:0.75em;
-}
-.visually-hidden{
-	position:absolute;
-	width:1px;
-	height:1px;
-	padding:0;
-	margin:-1px;
-	overflow:hidden;
-	clip:rect(0, 0, 0, 0);
-	border:0;
-}
 #contenutoPrincipale{
 	display:block;
 }
@@ -174,7 +149,7 @@ body.js-nav #nav.nav-open{
 	font-size:1.05em;
 	box-sizing:border-box;
 }
-h2{
+h1, h2{
 	font-family:'Bebas Neue', Impact, sans-serif;
     font-size:2.8em;
 	color:#252129;
@@ -206,16 +181,10 @@ h3{
 	background-position:top left;
 	line-height:1.45;
 }
-#infobox a:link, #infobox a:visited{
-	color:#d5d5d5;
-	text-decoration:none;
-}
-#infobox a:hover{ text-decoration:underline; }
 #infobox img{
 	width:5em;
     margin:1em;
 }
-#titoloStampa{ display:none; }
 #bio, #galleria, #pubblicazioni, #contatti{ margin:0; }
 .bio-layout{
 	display:block;
