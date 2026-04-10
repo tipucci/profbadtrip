@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /test/
 Disallow: /test
-Sitemap: https://tipucci.it/progetti/profbadtrip/sitemap.xml
+Sitemap: https://profbadtrip.tipucci.it/sitemap.xml
