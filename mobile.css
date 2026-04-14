@@ -111,19 +111,27 @@ body{
 	background-color:rgba(255,255,255,0.08);
 }
 #nav a[href="index.html"]#attivo,
-#nav a[href="index.html"][aria-current="page"]{
+#nav a[href="index.html"][aria-current="page"],
+#nav a[href="/"]#attivo,
+#nav a[href="/"][aria-current="page"]{
 	color:#71d16f;
 }
 #nav a[href="biografia.html"]#attivo,
-#nav a[href="biografia.html"][aria-current="page"]{
+#nav a[href="biografia.html"][aria-current="page"],
+#nav a[href="/biografia/"]#attivo,
+#nav a[href="/biografia/"][aria-current="page"]{
 	color:#6bd1ff;
 }
 #nav a[href="galleria.html"]#attivo,
-#nav a[href="galleria.html"][aria-current="page"]{
+#nav a[href="galleria.html"][aria-current="page"],
+#nav a[href="/galleria/"]#attivo,
+#nav a[href="/galleria/"][aria-current="page"]{
 	color:#ff5ca8;
 }
 #nav a[href="pubblicazioni.html"]#attivo,
-#nav a[href="pubblicazioni.html"][aria-current="page"]{
+#nav a[href="pubblicazioni.html"][aria-current="page"],
+#nav a[href="/pubblicazioni/"]#attivo,
+#nav a[href="/pubblicazioni/"][aria-current="page"]{
 	color:#ffd54a;
 }
 #nav a:before,
@@ -186,6 +194,26 @@ h3{
     margin:1em;
 }
 #bio, #galleria, #pubblicazioni, #contatti{ margin:0; }
+.errore-404{ margin:0; }
+.errore-404__eyebrow{
+	margin-bottom:0.8em;
+}
+.errore-404__intro{
+	font-size:1.08em;
+}
+.errore-404__actions{
+	flex-direction:column;
+	align-items:stretch;
+}
+.errore-404__cta{
+	text-align:center;
+}
+.errore-404__grid{
+	grid-template-columns:1fr;
+}
+.errore-404__card{
+	min-height:auto;
+}
 .bio-layout{
 	display:block;
 }

@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Redirect 1:1 from the old project subfolder to the new third-level domain.
+# This file must live in the old path:
+# https://www.tipucci.it/progetti/profbadtrip/
+
+# Normalize the old home URLs.
+RewriteRule ^index\.html?$ https://profbadtrip.tipucci.it/ [R=301,L]
+
+# Redirect every other old asset/page preserving the relative path.
+RewriteRule ^(.*)$ https://profbadtrip.tipucci.it/$1 [R=301,L]

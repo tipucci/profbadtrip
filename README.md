@@ -25,6 +25,7 @@ Il progetto parte da una base storica personale e viene ripreso, ripulito e adat
 - Compatibilita con GitHub Pages e hosting statico tradizionale.
 - Dominio personalizzato tramite file `CNAME`.
 - File utili al deploy statico gia presenti: `404.html`, `robots.txt`, `sitemap.xml`.
+- Redirect legacy Apache disponibili tramite file `.htaccess` per il vecchio percorso `/progetti/profbadtrip/`.
 
 ## Stack Utilizzato
 
@@ -149,6 +150,48 @@ Per il dominio personalizzato, assicurati che:
 - `404.html` sia incluso;
 - `robots.txt` e `sitemap.xml` puntino al dominio corretto;
 - il DNS del sottodominio sia configurato verso il provider scelto.
+
+### Redirect 301 dal vecchio percorso
+
+Se il sito prima era pubblicato in una sottocartella, per esempio:
+
+```text
+https://www.tipucci.it/progetti/profbadtrip/
+```
+
+il redirect permanente va configurato sul vecchio hosting, non sul nuovo sottodominio.
+
+Nel repository e presente un file `.htaccess` pronto all'uso con redirect `301` verso:
+
+```text
+https://profbadtrip.tipucci.it/
+```
+
+Perche funzioni correttamente:
+
+1. carica il file `.htaccess` dentro la vecchia cartella `/progetti/profbadtrip/`;
+2. assicurati che `mod_rewrite` sia attivo sul server Apache;
+3. verifica che URL come `index.html`, `galleria.html` e gli asset sotto `immagini/` vengano inoltrati sul nuovo dominio mantenendo il path.
+
+### Variante Apache con e senza www
+
+Se preferisci gestire il redirect a livello di VirtualHost o configurazione principale Apache, puoi usare una regola equivalente che intercetta sia `tipucci.it` sia `www.tipucci.it` e sposta solo il vecchio percorso del progetto:
+
+```apache
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^(www\.)?tipucci\.it$ [NC]
+RewriteRule ^progetti/profbadtrip/?$ https://profbadtrip.tipucci.it/ [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?tipucci\.it$ [NC]
+RewriteRule ^progetti/profbadtrip/(.*)$ https://profbadtrip.tipucci.it/$1 [R=301,L]
+```
+
+Questa variante e utile quando:
+
+1. non vuoi affidarti a `.htaccess`;
+2. hai accesso al vhost Apache del dominio principale;
+3. vuoi essere sicuro che il redirect valga sia per `tipucci.it` sia per `www.tipucci.it`.
 
 ## Licenza
 
