@@ -201,13 +201,6 @@ h3{
 .errore-404__intro{
 	font-size:1.08em;
 }
-.errore-404__actions{
-	flex-direction:column;
-	align-items:stretch;
-}
-.errore-404__cta{
-	text-align:center;
-}
 .errore-404__grid{
 	grid-template-columns:1fr;
 }

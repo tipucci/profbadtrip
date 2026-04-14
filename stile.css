@@ -270,37 +270,9 @@ h1, h2{
 	margin:0.8em 0 0;
 	color:#433b48;
 }
-.errore-404__actions{
-	display:flex;
-	flex-wrap:wrap;
-	gap:0.9em;
-	margin:1.8em 0 2.2em;
-}
-.errore-404__cta{
-	display:inline-block;
-	padding:0.9em 1.15em;
-	border:0.14em solid #252129;
-	color:#252129;
-	text-decoration:none;
+.errore-404__copy a{
+	color:#0e6f95;
 	font-weight:700;
-	background-color:#ffffff;
-}
-.errore-404__cta:hover,
-.errore-404__cta:focus{
-	text-decoration:none;
-	transform:translateY(-1px);
-}
-.errore-404__cta--home{
-	border-color:#0e6f95;
-	box-shadow:0 0 0 0.18em rgba(14, 111, 149, 0.08);
-}
-.errore-404__cta--galleria{
-	border-color:#b0006d;
-	box-shadow:0 0 0 0.18em rgba(176, 0, 109, 0.08);
-}
-.errore-404__cta--pubblicazioni{
-	border-color:#d8a600;
-	box-shadow:0 0 0 0.18em rgba(216, 166, 0, 0.1);
 }
 .errore-404__grid{
 	display:grid;
