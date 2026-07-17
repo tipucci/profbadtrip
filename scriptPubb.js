@@ -28,7 +28,7 @@ function Pubblicazione(categ, per, stil, nom, ann, citt, img){
 	this.nome = nom;
 	this.anno = ann;
 	this.citta = citt;
-	this.immagine = img || "";
+	this.immagine = img && img.indexOf("immagini/") === 0 ? "/" + img : (img || "");
 }
 
 function Elenco(){
